@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>拼图</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <h1>
+        <p>步数：<span class="step">0</span></p>
+        <button id="change">换一个</button>
+        <button class="reset">重置</button>
+        <button id="showNum">显示序号</button>
+        <button id="showAnswer">显示答案</button>
+    </h1>
+    <div id="main">
+        <div id="block_0" class="empty"></div>
+        <div id="block_1" class="block"><span>1</span></div>
+        <div id="block_2" class="block"><span>2</span></div>
+        <div id="block_3" class="block"><span>3</span></div>
+        <div id="block_4" class="block"><span>4</span></div>
+        <div id="block_5" class="block"><span>5</span></div>
+        <div id="block_6" class="block"><span>6</span></div>
+        <div id="block_7" class="block"><span>7</span></div>
+        <div id="block_8" class="block"><span>8</span></div>
+    </div>
+
+    <div id="success">
+        <h2>Success</h2>
+        <p>步数：<span class="step">0</span></p>
+        <button class="reset">再来一次</button>
+    </div>
+    <p class='tips'>上：W &nbsp;&nbsp;&nbsp;&nbsp;下：S &nbsp;&nbsp;&nbsp;&nbsp;左：A &nbsp;&nbsp;&nbsp;&nbsp;右：D</p>
+    <div class="answer"></div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/main.js"></script>
+</html>
