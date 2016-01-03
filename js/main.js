@@ -58,7 +58,6 @@ function up(){
         },100,function(){
             $(this).attr('data-index',targetIndex);
             updatePosition(emptyPosition,targetIndex);
-
         });
 
     }
@@ -101,6 +100,7 @@ function left(){
 
     }
 }
+
 function right(){
     if(emptyPosition%3>0){
         var targetIndex = parseInt(emptyPosition) - 1 ;
@@ -118,6 +118,7 @@ function right(){
         });
     }
 }
+
 $(document).ready(function(){
     change();
 }).on('keypress',function(e){
@@ -149,3 +150,9 @@ $(document).ready(function(){
 }).on('click','#change',function(){
     change();
 });
+
+
+touch.on(document, 'swipeleft', left);
+touch.on(document, 'swiperight', right);
+touch.on(document, 'swipeup', up);
+touch.on(document, 'swipedown', down);
