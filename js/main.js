@@ -152,10 +152,26 @@ $(document).ready(function(){
 });
 
 
-touch.on(document, 'swipeleft', left);
-touch.on(document, 'swiperight', right);
-touch.on(document, 'swipeup', up);
-touch.on(document, 'swipedown', down);
+touch.on(document, 'swipeleft', function(){
+    if(!$("#main>div").is(":animated")) {
+        left();
+    }
+});
+touch.on(document, 'swiperight', function(){
+    if(!$("#main>div").is(":animated")) {
+        right();
+    }
+});
+touch.on(document, 'swipeup', function(){
+    if(!$("#main>div").is(":animated")) {
+        up();
+    }
+});
+touch.on(document, 'swipedown', function(){
+    if(!$("#main>div").is(":animated")) {
+        down();
+    }
+});
 
 document.addEventListener("touchmove",function(e){
     e.preventDefault();
