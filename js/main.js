@@ -156,3 +156,8 @@ touch.on(document, 'swipeleft', left);
 touch.on(document, 'swiperight', right);
 touch.on(document, 'swipeup', up);
 touch.on(document, 'swipedown', down);
+
+document.addEventListener("touchmove",function(e){
+    e.preventDefault();
+    e.stopPropagation();
+},false);

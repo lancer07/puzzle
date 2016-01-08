@@ -1,9 +1,10 @@
 body {
-  background: #38a4be url(../img/bg.jpg) no-repeat left top;
+  background: #004EA2;
   color: #fff;
-  background-size: 100%;
+  overflow: hidden;
   position: fixed;
   width: 100%;
+  height: 90%;
 }
 #ctrl {
   width: 100%;
@@ -14,6 +15,7 @@ body {
 }
 .step {
   line-height: 100px;
+  font-size: 20px;
 }
 #main {
   width: 300px;
