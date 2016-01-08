@@ -1,5 +1,7 @@
 body {
-  background: #ffef5e;
+  background: #38a4be url(../img/bg.jpg) no-repeat left top;
+  color: #fff;
+  background-size: 100%;
   position: fixed;
   width: 100%;
 }
@@ -10,10 +12,13 @@ body {
   z-index: 10;
   opacity: 0;
 }
+.step {
+  line-height: 100px;
+}
 #main {
   width: 300px;
   height: 300px;
-  border: 10px solid #333;
+  border: 10px solid #1c1c1c;
   margin: 10px auto;
   background: #f0f0f0;
   position: relative;
@@ -92,7 +97,9 @@ h1 {
   font-size: 50px;
 }
 button {
-  padding: 10px 20px;
+  padding: 10px 0;
+  display: inline-block;
+  width: 20%;
   font-size: 14px;
 }
 .answer {
